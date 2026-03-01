@@ -12,8 +12,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = Flask(__name__)
 
 # Ensure uploads directory exists
-UPLOAD_DIR = os.path.join(os.path.dirname(__file__), 'uploads')
-os.makedirs(UPLOAD_DIR, exist_ok=True)
+# Use Vercel's allowed temporary directory for file uploads
+UPLOAD_DIR = '/tmp'
 
 # --- SKILLS DICTIONARY FOR RESUME ANALYSIS ---
 # A comprehensive list of skills to look for in a resume.
@@ -202,3 +202,4 @@ def generate_recommendations(user_data):
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
