@@ -122,6 +122,14 @@
                         <label for="branch" class="form-label">Branch or Specialization</label>
                         <select class="form-select" id="branch"></select>
                     </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Sector Interests</label>
+                        <div class="d-flex flex-wrap pt-2">
+                            <div class="form-check me-3"><input class="form-check-input" type="radio" name="sector" id="sector1" value="Technology"><label class="form-check-label" for="sector1">Technology</label></div>
+                            <div class="form-check me-3"><input class="form-check-input" type="radio" name="sector" id="sector2" value="Healthcare"><label class="form-check-label" for="sector2">Healthcare</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" name="sector" id="sector4" value="Finance"><label class="form-check-label" for="sector4">Finance</label></div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="mb-3 p-3 bg-light bg-opacity-50 rounded">
@@ -144,19 +152,11 @@
                 </div>
                 
                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <label class="form-label">Sector Interests</label>
-                        <div class="d-flex flex-wrap">
-                            <div class="form-check me-3"><input class="form-check-input" type="radio" name="sector" id="sector1" value="Technology"><label class="form-check-label" for="sector1">Technology</label></div>
-                            <div class="form-check me-3"><input class="form-check-input" type="radio" name="sector" id="sector2" value="Healthcare"><label class="form-check-label" for="sector2">Healthcare</label></div>
-                            <div class="form-check"><input class="form-check-input" type="radio" name="sector" id="sector4" value="Finance"><label class="form-check-label" for="sector4">Finance</label></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label for="state" class="form-label">Preferred Location</label>
                         <select class="form-select" id="state"><option value="">Any location</option></select>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                         <label for="duration" class="form-label">Preferred Duration</label>
                         <select class="form-select" id="duration"><option value="">Any duration</option></select>
                     </div>
@@ -424,5 +424,4 @@
         });
     </script>
 </body>
-
 </html>
